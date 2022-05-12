@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="567dp"
+    android:layout_height="497dp"
+    android:background="@drawable/dialog">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:text="Select field"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="263dp"
+        android:layout_height="68dp"
+        android:background="@drawable/head"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</FrameLayout>

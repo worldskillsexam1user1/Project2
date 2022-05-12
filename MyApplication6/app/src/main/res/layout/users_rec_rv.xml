@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="8dp">
+
+    <FrameLayout
+        android:layout_marginLeft="8dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/user_bg"
+        android:elevation="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/img"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#BEF1EE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="00 : 00 : 00"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#246781"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="A"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#096F96"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

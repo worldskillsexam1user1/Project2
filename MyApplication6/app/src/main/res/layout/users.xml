@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000dp"
+    android:layout_height="528dp"
+    android:background="@drawable/dialog">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:text="Select users"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="263dp"
+        android:layout_height="68dp"
+        android:background="@drawable/head"/>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <FrameLayout
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_bg">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginLeft="16dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:srcCompat="@drawable/search"
+                android:layout_gravity="center_vertical"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/edt"
+                android:layout_marginLeft="60dp"
+                android:hint="Search ..."
+                android:singleLine="true"
+                android:textColorHint="#AECBD5"
+                android:textColor="#04B1D9"/>
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectAll"
+            android:layout_marginLeft="40dp"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:text="Select all"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginHorizontal="98dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/rv"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/done"
+        android:layout_marginHorizontal="98dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/done"/>
+</FrameLayout>
